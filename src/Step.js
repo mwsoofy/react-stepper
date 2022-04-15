@@ -126,7 +126,7 @@ export default class Step extends Component {
     const leftStyle = Object.assign(styles.leftBar, (active || completed) ? styles.completedBar : {});
     const rightStyle = Object.assign(styles.rightBar, completed ? styles.completedBar : {});
 
-    const stepContent = icon ? <img src={icon} alt={index + 1} /> : index + 1;
+    const stepContent = icon ? <img src={icon} alt={index + 1}  className={'stepper_image'}/> : index + 1;
 
     return (
       <div style={ styles.step }>
